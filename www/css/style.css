@@ -1,0 +1,19 @@
+/* Empty. Add your own CSS if you like */
+
+.phoneType {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.invite-item {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.invite-item h2 {
+    margin: 0px;
+}
+
+.invite-item p {
+     margin: 0px;
+ }
