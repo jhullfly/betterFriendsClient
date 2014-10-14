@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- removes auto clicking of phone numbers which messes up angularjs -->
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>{{title}}</title>
+    <script type="text/javascript" src="cordova.js"></script>
+</head>
+
+<body ng-app="betterfriends" class="platform-ios platform-cordova platform-webview">
+    <span ui-view></span>
+    <span id="debug"></span>
+    <script>
+//        var BASE_URL = 'http://10.0.1.100:3000';
+        var BASE_URL = 'http://betterfriends.herokuapp.com';
+        // not using libraries because we don't want dependencies for startup code.
+        var debug = document.getElementById('debug');
+        function fetchScript(src) {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = false;
+            s.src = src;
+            document.head.appendChild(s);
+        }
+        function fetchCss(href) {
+            var s = document.createElement("link");
+            s.type = 'text/css';
+            s.rel = 'stylesheet';
+            s.href = href;
+            document.head.appendChild(s);
+        }
+        function configure(configData) {
+            var jsfiles = configData.jsFiles;
+            for(var i = 0 ;i < jsfiles.length; i++) {
+                var file = jsfiles[i];
+                console.log(file);
+                fetchScript(BASE_URL+'/'+file);
+            }
+            var cssfiles = configData.cssFiles;
+            for(var i = 0 ;i < cssfiles.length; i++) {
+                var file = cssfiles[i];
+                console.log(file);
+                fetchCss(BASE_URL+'/'+file);
+            }
+        }
+        var url = BASE_URL+'/configuration?callback=configure';
+        fetchScript(url);
+    </script>
+</body>
+
+</html>

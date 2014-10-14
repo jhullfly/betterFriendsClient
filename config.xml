@@ -7,7 +7,8 @@
   <author email="hi@ionicframework" href="http://ionicframework.com/">
       Ionic Framework Team
     </author>
-  <content src="http://10.0.1.100:3000/"/>
+<!--  <content src="http://betterfriends.herokuapp.com/"/> -->
+  <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>

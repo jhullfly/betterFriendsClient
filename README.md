@@ -12,11 +12,11 @@ $ npm install -g cordova ionic
 * You will need to checkout and run a server. See https://github.com/jhullfly/BetterFriendsServer
 
 ## Install
-* You need to edit ./config.xml changing
+* You need to edit ./www/index.html changing
 ```
-  <content src="http://10.0.1.100:3000/"/>
+        var BASE_URL = 'http://betterfriends.herokuapp.com';
   to
-  <content src="http://{{ip-address-of-computer-running-server}}:3000/"/>  
+        var BASE_URL = 'http://{{ip-address-of-computer-running-server}}:3000';
 ```
 {{ip-address-of-computer-running-server}} should not be localhost because this address will be resolved on 
 the phone you are testing on. (localhost is find for the simulator)
