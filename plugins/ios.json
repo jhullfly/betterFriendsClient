@@ -58,6 +58,16 @@
                         }
                     ]
                 }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "CFBundleURLTypes": [
+                        {
+                            "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>betterfriends</string></array></dict></array>",
+                            "count": 1
+                        }
+                    ]
+                }
             }
         }
     },
@@ -75,6 +85,10 @@
             "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
         },
         "org.apache.cordova.contacts": {
+            "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
+        },
+        "nl.x-services.plugins.launchmyapp": {
+            "URL_SCHEME": "betterfriends",
             "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
         }
     },

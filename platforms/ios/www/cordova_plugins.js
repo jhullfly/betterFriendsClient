@@ -111,6 +111,13 @@ module.exports = [
         "merges": [
             "Contact"
         ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.launchmyapp/www/ios/LaunchMyApp.js",
+        "id": "nl.x-services.plugins.launchmyapp.LaunchMyApp",
+        "clobbers": [
+            "window.plugins.launchmyapp"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -120,7 +127,8 @@ module.exports.metadata =
     "org.apache.cordova.console": "0.2.11",
     "org.apache.cordova.device": "0.2.12",
     "com.jsmobile.plugins.sms": "0.0.1",
-    "org.apache.cordova.contacts": "0.2.13"
+    "org.apache.cordova.contacts": "0.2.13",
+    "nl.x-services.plugins.launchmyapp": "3.2.0"
 }
 // BOTTOM OF METADATA
 });

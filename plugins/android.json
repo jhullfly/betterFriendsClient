@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -48,6 +52,12 @@
                             "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
                             "count": 1
                         }
+                    ],
+                    "/*/application/activity": [
+                        {
+                            "xml": "<intent-filter><data android:scheme=\"betterfriends\" /><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /></intent-filter>",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -67,6 +77,10 @@
             "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
         },
         "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
+        },
+        "nl.x-services.plugins.launchmyapp": {
+            "URL_SCHEME": "betterfriends",
             "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
         }
     },

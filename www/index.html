@@ -13,8 +13,8 @@
     <span ui-view></span>
     <span id="debug"></span>
     <script>
-//        var BASE_URL = 'http://10.0.1.100:3000';
-        var BASE_URL = 'http://betterfriends.herokuapp.com';
+        var BASE_URL = 'http://10.0.1.100:3000';
+//        var BASE_URL = 'http://betterfriends.herokuapp.com';
         // not using libraries because we don't want dependencies for startup code.
         var debug = document.getElementById('debug');
         function fetchScript(src) {
@@ -47,6 +47,19 @@
         }
         var url = BASE_URL+'/configuration?callback=configure';
         fetchScript(url);
+        // this is an epic hack. but unfortunately this function needs to live on this page.
+        var cordovaStartupUrl = null;
+        function handleOpenURL(url) {
+            console.log('url = '+url);
+            if (typeof handleOpenUrlInternal !== 'undefined') {
+                console.log('handleOpenUrlInternal is defined');
+                handleOpenUrlInternal(url);
+            } else {
+                console.log('handleOpenUrlInternal is not defined');
+                cordovaStartupUrl = url;
+            }
+        }
+
     </script>
 </body>
 
