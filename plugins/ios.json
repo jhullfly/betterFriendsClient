@@ -21,11 +21,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
+                            "xml": "<feature name=\"Contacts\"><param name=\"ios-package\" value=\"CDVContacts\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Contacts\"><param name=\"ios-package\" value=\"CDVContacts\" /></feature>",
+                            "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -81,16 +81,14 @@
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
         },
-        "com.jsmobile.plugins.sms": {
-            "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
-        },
         "org.apache.cordova.contacts": {
             "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
         },
         "nl.x-services.plugins.launchmyapp": {
             "URL_SCHEME": "betterfriends",
             "PACKAGE_NAME": "com.ionicframework.betterfriends133102"
-        }
+        },
+        "com.jsmobile.plugins.sms": {}
     },
     "dependent_plugins": {}
 }

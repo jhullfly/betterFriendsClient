@@ -9,14 +9,17 @@
         <param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Sms">
-        <param name="android-package" value="com.jsmobile.plugins.sms.Sms" />
-    </feature>
     <feature name="Contacts">
         <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
     </feature>
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="LaunchMyApp">
+        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
+    </feature>
+    <feature name="Sms">
+        <param name="android-package" value="com.jsmobile.plugins.sms.Sms" />
     </feature>
     <name>betterFriends</name>
     <description>
@@ -25,16 +28,10 @@
     <author email="hi@ionicframework" href="http://ionicframework.com/">
       Ionic Framework Team
     </author>
-    <content src="http://10.0.1.100:3000/" />
+    <content src="index.html" />
     <access origin="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
-    <feature name="StatusBar">
-        <param name="ios-package" onload="true" value="CDVStatusBar" />
-    </feature>
-    <feature name="LaunchMyApp">
-        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
-    </feature>
 </widget>

@@ -32,8 +32,6 @@
 		36B7573567C146E88A15728A /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F978BE537234D9C9DAE3185 /* UIWebViewExtension.m */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
-		6F4C1DF4FD2E45588F8D2E01 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F554137B0546D9B725EB0F /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		72735FF4AD5848FBA259BEAB /* Sms.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0F0B7C2E400AAF673B68 /* Sms.m */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
 		7E7966E01810823500FA85AD /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D61810823500FA85AD /* icon-50.png */; };
@@ -48,7 +46,6 @@
 		CD1749F50B7541499173F238 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C342A74A324FC284E143FF /* CDVLogger.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		DA5DB848EFB24A3CADAEC7A6 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F236EC48B434FE1A96570F7 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		EB3BE544C50749DAB1ABECCE /* Sms.h in Sources */ = {isa = PBXBuildFile; fileRef = 6C1A0E0074F14BD0958D0456 /* Sms.h */; };
 		FE52C271054742B8AE7F1BCE /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B6F7FC72446DAAC1CAEBA /* IonicKeyboard.m */; };
 /* End PBXBuildFile section */
 
@@ -143,7 +140,6 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
-				6F4C1DF4FD2E45588F8D2E01 /* MessageUI.framework in Frameworks */,
 				DA5DB848EFB24A3CADAEC7A6 /* AddressBook.framework in Frameworks */,
 				2258289C5F2E459C9B637420 /* AddressBookUI.framework in Frameworks */,
 			);
@@ -474,8 +470,6 @@
 				36B7573567C146E88A15728A /* UIWebViewExtension.m in Sources */,
 				CD1749F50B7541499173F238 /* CDVLogger.m in Sources */,
 				A045E53ADAF740BBBF7A4B58 /* CDVDevice.m in Sources */,
-				EB3BE544C50749DAB1ABECCE /* Sms.h in Sources */,
-				72735FF4AD5848FBA259BEAB /* Sms.m in Sources */,
 				0637F3C5F6084E13907836E2 /* CDVContacts.m in Sources */,
 				07359E82AD6F4053B0891445 /* CDVContact.m in Sources */,
 			);
@@ -531,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -542,7 +537,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "betterFriends/betterFriends-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -558,6 +553,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = betterFriends;
+				PROVISIONING_PROFILE = "67a1ea75-09fb-4778-bddb-db339e8cf087";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -567,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -576,7 +573,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "betterFriends/betterFriends-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -592,6 +589,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = betterFriends;
+				PROVISIONING_PROFILE = "67a1ea75-09fb-4778-bddb-db339e8cf087";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};

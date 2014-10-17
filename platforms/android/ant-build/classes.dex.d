@@ -12,6 +12,7 @@
 /Users/jessehull/dev/ionic/betterFriends/platforms/android/ant-build/classes/com/ionicframework/betterfriends133102/R.class \
 /Users/jessehull/dev/ionic/betterFriends/platforms/android/ant-build/classes/com/jsmobile/plugins/sms/Sms$1.class \
 /Users/jessehull/dev/ionic/betterFriends/platforms/android/ant-build/classes/com/jsmobile/plugins/sms/Sms.class \
+/Users/jessehull/dev/ionic/betterFriends/platforms/android/ant-build/classes/nl/xservices/plugins/LaunchMyApp.class \
 /Users/jessehull/dev/ionic/betterFriends/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor$WhereOptions.class \
 /Users/jessehull/dev/ionic/betterFriends/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor.class \
 /Users/jessehull/dev/ionic/betterFriends/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessorSdk5.class \

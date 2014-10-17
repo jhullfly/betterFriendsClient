@@ -28,9 +28,6 @@
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
-    <feature name="Sms">
-        <param name="ios-package" value="Sms" />
-    </feature>
     <feature name="Contacts">
         <param name="ios-package" value="CDVContacts" />
     </feature>
@@ -47,4 +44,7 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
+    <feature name="Sms">
+        <param name="ios-package" value="Sms" />
+    </feature>
 </widget>

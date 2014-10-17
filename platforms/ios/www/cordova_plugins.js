@@ -29,13 +29,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.jsmobile.plugins.sms/www/sms.js",
-        "id": "com.jsmobile.plugins.sms.sms",
-        "clobbers": [
-            "window.sms"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.contacts/www/contacts.js",
         "id": "org.apache.cordova.contacts.contacts",
         "clobbers": [
@@ -118,6 +111,13 @@ module.exports = [
         "clobbers": [
             "window.plugins.launchmyapp"
         ]
+    },
+    {
+        "file": "plugins/com.jsmobile.plugins.sms/www/sms.js",
+        "id": "com.jsmobile.plugins.sms.sms",
+        "clobbers": [
+            "window.sms"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -126,9 +126,9 @@ module.exports.metadata =
     "com.ionic.keyboard": "1.0.3",
     "org.apache.cordova.console": "0.2.11",
     "org.apache.cordova.device": "0.2.12",
-    "com.jsmobile.plugins.sms": "0.0.1",
     "org.apache.cordova.contacts": "0.2.13",
-    "nl.x-services.plugins.launchmyapp": "3.2.0"
+    "nl.x-services.plugins.launchmyapp": "3.2.0",
+    "com.jsmobile.plugins.sms": "0.0.1"
 }
 // BOTTOM OF METADATA
 });
