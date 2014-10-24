@@ -31,6 +31,12 @@
     <feature name="Contacts">
         <param name="ios-package" value="CDVContacts" />
     </feature>
+    <feature name="Sms">
+        <param name="ios-package" value="Sms" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
     <name>betterFriends</name>
     <description>
         An Ionic Framework and Cordova project.
@@ -44,7 +50,4 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
-    <feature name="Sms">
-        <param name="ios-package" value="Sms" />
-    </feature>
 </widget>

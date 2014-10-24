@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0637F3C5F6084E13907836E2 /* CDVContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FA4AFC18CC4B9E9FB6CF88 /* CDVContacts.m */; };
 		07359E82AD6F4053B0891445 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FF0EA204464068B41F4E5A /* CDVContact.m */; };
@@ -47,6 +46,7 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		DA5DB848EFB24A3CADAEC7A6 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F236EC48B434FE1A96570F7 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FE52C271054742B8AE7F1BCE /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8B6F7FC72446DAAC1CAEBA /* IonicKeyboard.m */; };
+		9E6837547CB442CDA17768DC /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0E0E69D79B4203BE870915 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +128,8 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = betterFriends/config.xml; sourceTree = "<group>"; };
+		FD0E0E69D79B4203BE870915 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		659592B6E70D4D09919F92B0 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "org.apache.cordova.inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,8 @@
 				29FF0EA204464068B41F4E5A /* CDVContact.m */,
 				D3336D736094441499B477C5 /* CDVContacts.h */,
 				5C5E9F455839422B833AF468 /* CDVContact.h */,
+				FD0E0E69D79B4203BE870915 /* CDVInAppBrowser.m */,
+				659592B6E70D4D09919F92B0 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = betterFriends/Plugins;
@@ -472,6 +476,7 @@
 				A045E53ADAF740BBBF7A4B58 /* CDVDevice.m in Sources */,
 				0637F3C5F6084E13907836E2 /* CDVContacts.m in Sources */,
 				07359E82AD6F4053B0891445 /* CDVContact.m in Sources */,
+				9E6837547CB442CDA17768DC /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +530,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -537,7 +545,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "betterFriends/betterFriends-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -553,7 +561,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = betterFriends;
-				PROVISIONING_PROFILE = "67a1ea75-09fb-4778-bddb-db339e8cf087";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -563,7 +571,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -573,7 +584,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "betterFriends/betterFriends-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -589,7 +600,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = betterFriends;
-				PROVISIONING_PROFILE = "67a1ea75-09fb-4778-bddb-db339e8cf087";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};

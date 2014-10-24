@@ -1,0 +1,8 @@
+
+cordova plugin add org.apache.cordova.contacts
+
+cordova plugin add com.jsmobile.plugins.sms
+
+cordova plugin add https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git --variable URL_SCHEME=betterfriends
+
+cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git

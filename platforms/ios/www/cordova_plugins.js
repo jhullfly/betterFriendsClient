@@ -118,6 +118,13 @@ module.exports = [
         "clobbers": [
             "window.sms"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+        "id": "org.apache.cordova.inappbrowser.inappbrowser",
+        "clobbers": [
+            "window.open"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -128,7 +135,8 @@ module.exports.metadata =
     "org.apache.cordova.device": "0.2.12",
     "org.apache.cordova.contacts": "0.2.13",
     "nl.x-services.plugins.launchmyapp": "3.2.0",
-    "com.jsmobile.plugins.sms": "0.0.1"
+    "com.jsmobile.plugins.sms": "0.0.1",
+    "org.apache.cordova.inappbrowser": "0.5.4-dev"
 }
 // BOTTOM OF METADATA
 });
